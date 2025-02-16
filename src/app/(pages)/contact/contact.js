@@ -52,7 +52,7 @@ const ContactUsPage = () => {
       const response = await API.post("/marketing/add_contact_details", formData);
 
       if (response.status === 200) {
-        alertContent("Thank you! We'll respond shortly.", "success");
+        alertContent("Thank you! We&apos;ll respond shortly.", "success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         alertContent("Something went wrong. Try again later.", "error");

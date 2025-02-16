@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 const ReliableDelivery = () => {
   return (
     <div className="w-full">
          {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/delevery.png"
           alt="Reliable Delivery Service"
           className="w-full h-64 object-cover"
@@ -25,7 +26,7 @@ const ReliableDelivery = () => {
       </p>
 
       <div className="flex justify-center my-8">
-        <img
+        <Image
           src="/truck.jpg" 
           alt="Delivery Truck"
           className="w-fill"

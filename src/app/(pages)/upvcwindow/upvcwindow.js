@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
+import Image from 'next/image';
 
 export default function UpvcWindow() {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/upvcwindow.jpeg"
           alt="UPVC Window"
           className="w-full h-64 object-cover"

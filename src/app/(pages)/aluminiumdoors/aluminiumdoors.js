@@ -1,11 +1,11 @@
 import React from "react";
-
+import Image from 'next/image';
 export default function AluminiumDoors() {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/aluminiumdoors.png"
           alt="Aluminium Doors"
           className="w-full h-64 object-cover"

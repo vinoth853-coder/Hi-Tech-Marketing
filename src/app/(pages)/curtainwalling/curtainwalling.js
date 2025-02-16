@@ -1,11 +1,12 @@
 import React from "react";
+import Image from 'next/image';
 
 export default function CurtainWalling() {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/curtainwalling.png"
           alt="Curtain Walling"
           className="w-full h-64 object-cover"

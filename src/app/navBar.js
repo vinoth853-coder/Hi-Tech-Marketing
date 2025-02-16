@@ -10,6 +10,7 @@ import Link from "next/link";
 import useAuthStore from "@/store/authStore";
 import { useCallback, useEffect, useRef, useState, useLayoutEffect } from "react";
 import { useAuth } from "@/components/AuthContext";
+import Image from 'next/image';
 
 const Navbar = () => {
   const { role, setRole } = useAuthStore();
@@ -126,7 +127,7 @@ const Navbar = () => {
       <div className="sticky top-0 z-20 flex justify-between items-center px-6 py-4 sm:px-8 sm:py-[10px] bg-barcolor shadow-lg w-full">
         <div className="flex items-center group">
           <Link href="/" className="flex items-center group">
-            <img
+            <Image
               src="/logo-transparent-svg.svg"
               alt="Company Logo"
               width={200}
@@ -221,7 +222,7 @@ const Navbar = () => {
           <div className="fixed inset-0 z-20 pt-10 bg-primary flex flex-col space-y-4 p-4 transition-transform duration-300 ease-in-out w-[75%] h-full top-16 left-0 slide-in-left">
             {links.map(({ href, label, icon, subLinks, isDropdown }) => (
               <div key={href}>
-                {/* Only render the main link if it's not a dropdown */}
+                {/* Only render the main link if it&apos;s not a dropdown */}
                 {!isDropdown && (
                   <Link
                     href={href}

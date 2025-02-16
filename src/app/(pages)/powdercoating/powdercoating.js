@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 const PowderCoating = () => {
   return (
@@ -19,22 +20,22 @@ const PowderCoating = () => {
       {/* Content Section */}
       <div className="container mx-auto px-6 py-12 text-center">
         <h2 className="text-3xl text-blue-800 font-medium">
-          Let Kooner Shop Fitters provide your business with the best solution.
+          Let HI- TECH Shop Fitters provide your business with the best solution.
         </h2>
         <div className="flex flex-col lg:flex-row items-center mt-6">
           <div className="lg:w-1/2 text-left">
             <p className="text-black max-w-xl">
-              Kooner Shopfronts have extensive experience in providing an in-house high-quality powder coating facility. 
+             HI- TECH Shopfronts have extensive experience in providing an in-house high-quality powder coating facility. 
               This enables us to offer our clients a fully bespoke and individualized product at very competitive prices. 
               We use the best methods and tools in performing all of our powder coating.
             </p>
             <p className="text-black max-w-xl mt-4">
-              We can powder coat much more than just shutters, Kooner Shopfronts provide powder coating on a range of products 
+              We can powder coat much more than just shutters, HI- TECH Shopfronts provide powder coating on a range of products 
               not specific to the shutter industry. Call us to discuss further our services of powder coating.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-            <img src="/subwaypowder.jpg" alt="Powder Coating Example" className="w-96 h-64 object-cover rounded-lg shadow-md" />
+            <Image src="/subwaypowder.jpg" alt="Powder Coating Example" className="w-96 h-64 object-cover rounded-lg shadow-md" />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Windows() {
     <div className="">
       {/* Banner Section */}
       <div className="relative h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center text-white text-3xl font-bold"
-        style={{ backgroundImage: "url('/CurtainWallingSystemT.png')" }}>
+        style={{ backgroundImage: "url('/upvcwindow.jpeg')" }}>
         <h1 className="backdrop-gray-sm px-4 py-2 bg-black/30 rounded-lg text-center">
         Windows
         </h1>
@@ -26,8 +26,8 @@ export default function Windows() {
           {/* Image Section */}
           <div className="sm:mt-10 sm:mb-10">
             <Image 
-              src="/windowsBanner.png" 
-              alt="Windows" 
+              src="/window2.jpg" 
+              alt="Window" 
               width={400} 
               height={300} 
               className="rounded-lg"

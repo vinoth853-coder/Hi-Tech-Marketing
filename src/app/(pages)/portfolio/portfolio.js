@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
+import Image from 'next/image';
 
 const PortfolioPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -77,13 +78,13 @@ const PortfolioPage = () => {
           <motion.div className="bg-gray-200 p-6 rounded-lg "
             whileHover={{ scale: 1.05 }}>
             <h3 className="text-2xl font-bold text-blue-800 mb-4 mt-4">Powder Coating</h3>
-            <p className="text-black">Welcome to Kooner Fitters, where excellence meets craftsmanship in every installation we undertake. As specialists in aluminium products, including doors and windows, our skilled fitters ensure a seamless process that culminates in a professional, stylish, and secure finish. With our Fensa certification, we guarantee accurate installations that minimize the likelihood of future issues. Beyond enhanced energy efficiency and security, our properly installed doors and windows optimize functionality, elevating the comfort and aesthetics of your space. Entrust us with your installation needs, and you'll witness the longevity of your investment flourish. Our meticulous approach ensures extended product lifespan, providing lasting value and satisfaction.</p>
+            <p className="text-black">Welcome to Kooner Fitters, where excellence meets craftsmanship in every installation we undertake. As specialists in aluminium products, including doors and windows, our skilled fitters ensure a seamless process that culminates in a professional, stylish, and secure finish. With our Fensa certification, we guarantee accurate installations that minimize the likelihood of future issues. Beyond enhanced energy efficiency and security, our properly installed doors and windows optimize functionality, elevating the comfort and aesthetics of your space. Entrust us with your installation needs, and you&apos;ll witness the longevity of your investment flourish. Our meticulous approach ensures extended product lifespan, providing lasting value and satisfaction.</p>
           </motion.div>
 
           <motion.div className="bg-gray-200 p-6 rounded-lg "
             whileHover={{ scale: 1.05 }}>
             <h3 className="text-2xl font-bold text-blue-800 mb-4 mt-4">Installation</h3>
-            <p className="text-black">Welcome to Kooner Fitters, your trusted partner for expert installation services, catering to all your aluminium products, including doors and windows. With our team of skilled fitters, rest assured that your installation process will be carried out with precision, resulting in a professional, stylish, and secure finish. As Fensa certified fitters, we take pride in ensuring correct installations, minimizing the chances of future issues. Properly installed doors and windows not only enhance energy efficiency and security but also elevate functionality. By entrusting us with your installation needs, you'll enjoy extended product lifespan, making the most of your investment. Experience the peace of mind that comes with our top-notch installation service, ensuring your doors and windows function safely and reliably, all while adding a touch of elegance to your space.</p>
+            <p className="text-black">Welcome to Kooner Fitters, your trusted partner for expert installation services, catering to all your aluminium products, including doors and windows. With our team of skilled fitters, rest assured that your installation process will be carried out with precision, resulting in a professional, stylish, and secure finish. As Fensa certified fitters, we take pride in ensuring correct installations, minimizing the chances of future issues. Properly installed doors and windows not only enhance energy efficiency and security but also elevate functionality. By entrusting us with your installation needs, you&apos;ll enjoy extended product lifespan, making the most of your investment. Experience the peace of mind that comes with our top-notch installation service, ensuring your doors and windows function safely and reliably, all while adding a touch of elegance to your space.</p>
           </motion.div>
 
           <motion.div className="bg-gray-200 p-6 rounded-lg "
@@ -109,7 +110,7 @@ const PortfolioPage = () => {
           {[1, 2, 3, 4, 5, 6].map((project, index) => (
             <motion.div key={index} className="relative group bg-gray-200 p-6 rounded-lg shadow-lg cursor-pointer"
               whileHover={{ scale: 1.05 }}>
-              <img src={`/img${project}.jpg`} alt={`Project ${project}`} className="w-full h-48 object-cover rounded-md" />
+              <Image src={`/img${project}.jpg`} alt={`Project ${project}`} className="w-full h-48 object-cover rounded-md" />
               <h3 className="mt-4 text-lg font-bold text-blue-800">Project {project}</h3>
               <p className="text-black text-sm">Custom Interior & Shop Fitting</p>
               
@@ -133,7 +134,7 @@ const PortfolioPage = () => {
 
     {/* Right Side - Submit Your Details Form */}
     <div className="md:w-1/2 w-full  p-4 pt-10 pb-10 rounded-lg ">
-    <img
+    <Image
             src="/package.jpg" // Replace with your image URL
             alt="Building"
             className="rounded-lg shadow-lg w-full h-auto md:max-w-xs"

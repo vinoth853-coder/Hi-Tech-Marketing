@@ -1,11 +1,12 @@
 import React from "react";
+import Image from 'next/image';
 
 export default function UPVCDoors() {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/upvcdoors.png"
           alt="UPVC Doors"
           className="w-full h-64 object-cover"

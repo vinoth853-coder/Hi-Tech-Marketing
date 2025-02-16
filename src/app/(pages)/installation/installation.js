@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Installation = () => {
   return (
@@ -18,7 +19,7 @@ const Installation = () => {
           Quality Installed <span className="font-bold">Satisfaction Guaranteed</span>
         </h2>
         <p className="text-black max-w-2xl mx-auto mt-4">
-          Kooners fitters provide installation services for all your aluminium products, including doors and windows. Our skilled fitters ensure that the installation process is carried out with precision and expertise, resulting in a professional and secure finish.
+          HI- TECH fitters provide installation services for all your aluminium products, including doors and windows. Our skilled fitters ensure that the installation process is carried out with precision and expertise, resulting in a professional and secure finish.
         </p>
       </div>
       
@@ -35,7 +36,7 @@ const Installation = () => {
           </div>
           <div>
             <h3 className="font-semibold text-blue-800 text-xl">Longevity</h3>
-            <p className="text-black">Professional installation extends the product's lifespan.</p>
+            <p className="text-black">Professional installation extends the product&apos;s lifespan.</p>
           </div>
           <div>
             <h3 className="font-semibold text-blue-800 text-xl">Safety</h3>
@@ -43,7 +44,7 @@ const Installation = () => {
           </div>
         </div>
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-          <img src="/installsm.jpg" alt="Worker" className="w-80 h-80 rounded-full object-cover shadow-lg" />
+          <Image src="/installsm.jpg" alt="Worker" className="w-80 h-80 rounded-full object-cover shadow-lg" />
         </div>
       </div>
       

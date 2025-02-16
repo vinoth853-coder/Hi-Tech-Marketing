@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const itemsLeft = [
   "Aluminium Shop fronts",
@@ -251,7 +252,7 @@ const Home = () => {
 
         {/* Center Image */}
         <div className="flex justify-center">
-          <img
+          <Image
             src="/centerimagehome.jpg" // Replace with your image URL
             alt="Building"
             className="rounded-lg shadow-lg w-full h-auto md:max-w-xs"
@@ -275,7 +276,7 @@ const Home = () => {
             key={index}
             className="relative bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 hover:bg-teal-700 hover:text-white text-gray-800"
           >
-            <img
+            <Image
               src={item.image}
               alt={item.name}
               className="w-full h-48 object-cover"
@@ -307,7 +308,7 @@ const Home = () => {
           Join Hundreds Of Satisfied Customers.
         </h1>
         <p className="mt-4 text-lg max-w-2xl">
-          Kooner Shop Fitters Limited has been providing customers great solutions and fantastic service for many years now. Contact us and see how we can help your business.
+          HI- TECH Shop Fitters Limited has been providing customers great solutions and fantastic service for many years now. Contact us and see how we can help your business.
         </p>
         <Link href="/contact">
           <button className="mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md shadow-lg transition duration-300">

@@ -1,11 +1,12 @@
 import React from "react";
+import Image from 'next/image';
 
 export default function BiFoldingDoors() {
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative">
-        <img
+        <Image
           src="/bifoldingdoors.jpg"
           alt="Bi-Folding Doors"
           className="w-full h-64 object-cover"
