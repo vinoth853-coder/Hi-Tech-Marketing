@@ -1,58 +1,33 @@
 "use client";
 
-import { FiHome, FiCalendar, FiHeart, FiPhone, FiUser } from "react-icons/fi";
+
 import { RiAdminLine } from "react-icons/ri";
-import { SlLogin, SlLogout } from "react-icons/sl";
-import { MdCurrencyRupee, MdOutlineSchedule } from "react-icons/md";
+import { SiElectronbuilder } from "react-icons/si";
+import { MdCurrencyRupee, MdOutlineSchedule, MdContactPhone, MdRollerShades, MdWindow, MdOutlineBuild, } from "react-icons/md";
+import { FaHome, FaBoxOpen, FaBriefcase, FaDumpsterFire, FaBuilding, FaDoorClosed, FaStore, FaShippingFast } from "react-icons/fa";
 import { usePathname, useRouter } from "next/navigation";
 import { GrBlog } from "react-icons/gr";
+import { GiPaintRoller } from "react-icons/gi";
 import Link from "next/link";
-import useAuthStore from "@/store/authStore";
 import { useCallback, useEffect, useRef, useState, useLayoutEffect } from "react";
-import { useAuth } from "@/components/AuthContext";
 import Image from 'next/image';
 
 const Navbar = () => {
-  const { role, setRole } = useAuthStore();
-  const { isAuthenticated, logout, user } = useAuth();
-  const router = useRouter();
   const pathname = usePathname();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activePath, setActivePath] = useState(pathname);
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const initials = isAuthenticated ? user.head_name[0].toUpperCase() : "";
   const dropdownRef = useRef(null);
 
   useLayoutEffect(() => {
     setActivePath(pathname);
   }, [pathname]);
 
-  const toggleDropdown = () => {
-    setShowDropdown((prev) => !prev);
-  };
-
-  const handleViewProfile = () => {
-    router.push("/profile");
-    setShowDropdown(false);
-  };
-
-  const handleLogout = () => {
-    setRole("user");
-    router.push("/");
-    logout();
-    setShowDropdown(false);
-  };
-
   const handleClickOutside = useCallback(
     (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setShowDropdown(false);
       }
-    },
-    [setShowDropdown]
-  );
+    },[]);
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -74,22 +49,26 @@ const Navbar = () => {
     };
   }, []);
 
+
+  
+
   const links = [
-    { href: "/", label: "HOME", icon: <FiHome />, key: "home" },
+    { href: "/", label: "HOME", icon: <FaHome />, key: "home" },
     
     
     {
       href: "#products",
       label: "PRODUCTS",
-      icon: <FiHeart />,
+      icon: <FaBoxOpen />,
       isDropdown: true,
       subLinks: [
-        { href: "/firerateddoors", label: "Fire Rated Shutters & Doors", icon: <FiHeart />, key: "fire-rated-shutters-and-doors" },
-        { href: "/shuttersections", label: "Shutter Sections", icon: <GrBlog />, key: "shutter-sections" },
-        { href: "/curtainwallingsystem", label: "Curtain Walling System", icon: <FiHeart />, key: "curtain-walling-system" },
-        { href: "/doors", label: "Doors", icon: <GrBlog />, key: "doors" },
-        { href: "/windows", label: "Windows", icon: <GrBlog />, key: "windows" },
-        { href: "/shopfronts", label: "Shop Fronts", icon: <GrBlog />, key: "shop-fronts" },
+        { href: "/shopfronts", label: "Shop Fronts", icon: <FaStore />, key: "shop-fronts" },
+        { href: "/shuttersections", label: "Shutter Sections", icon: <MdRollerShades />, key: "shutter-sections" },
+        { href: "/doors", label: "Doors", icon: <FaDoorClosed />, key: "doors" },
+        { href: "/firerateddoors", label: "Fire Rated Shutters & Doors", icon: <FaDumpsterFire />, key: "fire-rated-shutters-and-doors" },
+        { href: "/windows", label: "Windows", icon: <MdWindow />, key: "windows" },
+        { href: "/curtainwallingsystem", label: "Curtain Walling System", icon: <FaBuilding />, key: "curtain-walling-system" },
+        
       ],
       key: "products",
       
@@ -97,18 +76,18 @@ const Navbar = () => {
     {
       href: "#services",
       label: "SERVICES",
-      icon: <FiCalendar />,
+      icon: <SiElectronbuilder />,
       isDropdown: true,
       subLinks: [
-        { href: "/installation", label: "Installation", icon: <MdOutlineSchedule />, key: "installation" },
-        { href: "/powdercoating", label: "Powder Coating", icon: <FiCalendar />, key: "powder-coating" },
-        { href: "/reliabledelivery", label: "Reliable delivery service", icon: <MdOutlineSchedule />, key: "reliable-delivery-service" },
+        { href: "/installation", label: "Installation", icon: <MdOutlineBuild />, key: "installation" },
+       // { href: "/powdercoating", label: "Powder Coating", icon: <GiPaintRoller />, key: "powder-coating" },
+        { href: "/reliabledelivery", label: "Reliable delivery service", icon: <FaShippingFast />, key: "reliable-delivery-service" },
       ],
       key: "services",
     },
     
-    { href: "/portfolio", label: "PORTFOLIO", icon: <GrBlog />, key: "portfolio" },
-    { href: "/contact", label: "CONTACT", icon: <FiPhone />, key: "contact" },
+    { href: "/portfolio", label: "PORTFOLIO", icon: <FaBriefcase />, key: "portfolio" },
+    { href: "/contact", label: "CONTACT", icon: <MdContactPhone />, key: "contact" },
    
   ];    
 

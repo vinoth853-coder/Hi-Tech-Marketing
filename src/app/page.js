@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaTiktok } from "react-icons/fa";
 
 const itemsLeft = [
   "Aluminium Shop fronts",
@@ -23,7 +24,6 @@ const itemsRight = [
   "Security Grills.",
   "Glass Shop Front Fittings.",
   "Insulated Shutters",
-  "Wicked Gates",
   "Custom Build Shutters",
   "Custom Build Shop Fronts",
   "Pitched Glass Roof, Pergola, Roof Lantern",
@@ -42,23 +42,23 @@ const items = [
 
 const testimonials = [
   {
-    text: "We gave Kooner Shop Fitters the work for our new outlet in Manchester, and they did an excellent job. The work was within the time requirements, and we were kept up to date with all work and the price was on the mark.",
+    text: "We gave HI-Tech Shop Fitters the work for our new outlet in Manchester, and they did an excellent job. The work was within the time requirements, and we were kept up to date with all work and the price was on the mark.",
     name: "Charlie Brown",
   },
   {
-    text: "If you want a professional job done then call Kooner Shop Fitters as they can do all types of work like security grills to interior fittings. Fantastic.",
+    text: "If you want a professional job done then call HI-Tech Shop Fitters as they can do all types of work like security grills to interior fittings. Fantastic.",
     name: "Subway",
   },
   {
-    text: "We had a large project and wanted a company who would manage the whole project from start to end. Kooner Shop Fitters did just that and within the budget requirements. We will be using Kooner Shop Fitters in the future.",
+    text: "We had a large project and wanted a company who would manage the whole project from start to end. HI-Tech Shop Fitters did just that and within the budget requirements. We will be using HI-Tech Shop Fitters in the future.",
     name: "Select And Save",
   },
   {
-    text: "We had a large project and wanted a company who would manage the whole project from start to end. Kooner Shop Fitters did just that and within the budget requirements. We will be using Kooner Shop Fitters in the future.",
+    text: "We had a large project and wanted a company who would manage the whole project from start to end. HI-Tech Shop Fitters did just that and within the budget requirements. We will be using HI-Tech Shop Fitters in the future.",
     name: "Select And Save"
   },
   {
-    text: "Kooner Shop Fitters have really done a great job. Totally professional and above all the price and quality was outstanding.",
+    text: "HI-Tech Shop Fitters have really done a great job. Totally professional and above all the price and quality was outstanding.",
     name: "Islamic Impressions"
   },
   {
@@ -142,7 +142,7 @@ const Home = () => {
             animate="visible"
             transition={{ delay: 0.2 }}
           >
-            HI- TECH
+           <span className="bg-clip-text mt-2 text-transparent bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500"> HI- TECH </span> 
             <br />
             <span className="bg-clip-text mt-2 text-transparent bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
               SHOPFRONT AND SHUTTERS LTD
@@ -157,8 +157,26 @@ const Home = () => {
           >
            MEET CUSTOMER EXPECTATIONS
           </motion.h2>
+
+        <div className="flex space-x-4 mt-4">
+                    <a href="https://www.facebook.com/share/1A7hwDfTeP/" target="_blank" rel="noopener noreferrer">
+                      <FaFacebook className="text-3xl hover:text-blue-500 transition" />
+                    </a>
+                    <a href="https://www.instagram.com/hitech_shopfronts_ltd?igsh=Z3BhZnNrNjNteTc0" target="_blank" rel="noopener noreferrer">
+                      <FaInstagram className="text-3xl hover:text-blue-500 transition" />
+                    </a>
+                    <a href="https://www.tiktok.com/@hitech_shopfronts_ltd?_t=ZN-8txSngXoGDm&_r=1" target="_blank" rel="noopener noreferrer">
+                      < FaTiktok className="text-3xl hover:text-blue-500 transition" />
+                    </a>
+                    <a href="mailto:blueshyshopfronts@outlook.com">
+                      <FaEnvelope className="text-3xl hover:text-blue-500 transition" />
+                    </a>
+                    <a href="tel:+447479345599">
+                      <FaPhone className="text-3xl hover:text-blue-500 transition" />
+                    </a>
+                  </div>  
  
-          <motion.div
+          {/* <motion.div
             className="mt-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1.5, delay: 0.5 } }}
@@ -169,7 +187,7 @@ const Home = () => {
             >
               Get a quote
             </button>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
  
@@ -189,10 +207,7 @@ const Home = () => {
       </motion.h2>
 
       <motion.p className="text-lg sm:text-xl leading-relaxed mb-6 text-justify" variants={slideIn}>
-      At Hi- Tech Shop Fitters, we take pride in providing a comprehensive nationwide service for roller shutters and shop fronts. From Scotland to Northern Ireland, Wales to the rest of Great Britain, our reach extends far and wide, ensuring your business gets the attention it deserves.
-      </motion.p>
-      <motion.p className="text-lg sm:text-xl leading-relaxed mb-6 text-justify" variants={slideIn}>
-      With a state-of-the-art manufacturing plant spanning 22,000 sq ft right here in the UK, we are committed to delivering the highest standard of shop fronts and roller shutters. Quality is our priority, and we offer unbeatable prices without compromising on excellence.
+      At Hi- Tech Shop Fitters, we take pride in providing a comprehensive nationwide service for roller shutters and shop fronts. From Scotland to Northern Ireland, Wales to the rest of Great Britain, our reach extends far and wide, ensuring your business gets the attention it deserves. we are committed to delivering the highest standard of shop fronts and roller shutters. Quality is our priority, and we offer unbeatable prices without compromising on excellence.
       </motion.p>
     </div>
 

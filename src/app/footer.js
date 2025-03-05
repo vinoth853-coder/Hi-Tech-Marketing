@@ -31,11 +31,11 @@ const Footer = () => {
           <h2 className="text-lg text-secondary md:text-xl font-bold">Get In Touch</h2>
           <p className="text-sm text-secondary md:text-base">
             <strong>Address:</strong><br />
-            HI-Tech, Thailapuram, Nazareth,<br />
-            Tamil Nadu - 628617
+            Unit 4A, Tong St Business Park, Holme Lane, Bradford, BD4 OPY<br />
+            
           </p>
-          <a href="mailto:hitech@gmail.com" className="text-sm md:text-base text-blue-500 hover:text-blue-300">hitech@gmail.com</a>
-          <a href="tel:+917598981500" className="text-sm md:text-base text-blue-500 hover:text-blue-300">+91 7598981500</a>
+          <a href="mailto:blueshyshopfronts@outlook.com" className="text-sm md:text-base text-blue-500 hover:text-blue-300">blueshyshopfronts@outlook.com</a>
+          <a href="tel:+447479345599" className="text-sm md:text-base text-blue-500 hover:text-blue-300">+44 7479345599</a>
         </div>
 
         {/* Developer Info Section */}
@@ -46,7 +46,7 @@ const Footer = () => {
           <p className="text-sm text-secondary">For <strong>Hi-TECH</strong></p>
           <p className="text-sm text-secondary">
             Contact Developer:&nbsp;
-            <a href="mailto:Ideatechenquiry@gmail.com" className="text-blue-500 hover:text-blue-300">ideatechenquiry@gmail.com</a>
+            <a href="mailto:ideatechenquiry@gmail.com" className="text-blue-500 hover:text-blue-300">ideatechenquiry@gmail.com</a>
           </p>
           <a href="tel:+447553433151" className="text-sm md:text-base text-blue-500 hover:text-blue-300">+44 7553433151</a>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
       <div className="container mx-auto text-center border-t border-gray-700 py-4 text-sm text-blue-400">
         <p className="text-secondary">
           &copy; {new Date().getFullYear()} Hi-TECH, UK | Crafted with ❤️ by&nbsp;
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-semibold hover:text-blue-300">
+          <a  className="text-blue-500 font-semibold hover:text-blue-300">
             IDEA TECH
           </a> ✨
         </p>

@@ -5,7 +5,7 @@ export default function CurtainWallingSystem() {
   return (
     <div className="">
       {/* Banner Section */}
-      <div className="relative h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center text-white text-3xl font-bold"
+      <div className="relative h-[250px] md:h-[500px] bg-cover bg-center flex items-center justify-center text-white text-3xl font-bold"
         style={{ backgroundImage: "url('/CurtainWallingSystemT.png')" }}>
         <h1 className="backdrop-gray-sm px-4 py-2 bg-black/30 rounded-lg text-center">
         Curtain Walling System
@@ -14,7 +14,7 @@ export default function CurtainWallingSystem() {
 
       {/* Content Section */}
       <div className="max-w-6xl mx-auto p-6">
-        <div className=" p-6 flex flex-col md:flex-row gap-5 sm:gap-10">
+        <div className="  flex flex-col md:flex-row gap-5 sm:gap-10">
           {/* Text Content */}
           <div className="flex-1">
             <h2 className="sm:text-5xl text-3xl md-3xl font-bold sm:mt-10 sm:mb-10 text-blue-800">Curtain Walling System</h2>
@@ -39,7 +39,7 @@ export default function CurtainWallingSystem() {
           </div>
 
           {/* Image Section */}
-          <div className="sm:mt-10 sm:mb-10">
+          <div className="">
             <Image 
               src="/curtainWallingSystem.png" 
               alt="Fire Rated Shutters & Doors" 

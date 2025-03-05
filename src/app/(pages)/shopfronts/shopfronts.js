@@ -19,7 +19,7 @@ export default function ShopFronts() {
           <div className="flex-1">
             <h2 className="sm:text-5xl text-3xl md-3xl font-bold sm:mt-10 sm:mb-10 text-blue-800">Shop Fronts</h2>
             <p className="text-black text-lg mt-4">
-            At Kooner Shop Fronts, excellence is our hallmark when it comes to manufacturing high-quality custom-built shutters. With a wealth of experience in this sector, we have earned the trust and satisfaction of numerous delighted customers.
+            At HI-Tech Shop Fronts, excellence is our hallmark when it comes to manufacturing high-quality custom-built shutters. With a wealth of experience in this sector, we have earned the trust and satisfaction of numerous delighted customers.
 Our commitment to in-house manufacturing guarantees that you receive shop front fittings of the finest quality at a reasonable price. Each product undergoes rigorous quality control to ensure it meets our exacting standards before leaving our workshops.
             </p>
             <p className="text-black text-lg mt-4">

@@ -94,12 +94,12 @@ const ContactUsPage = () => {
           {/* Contact Details */}
           <div className="lg:w-1/2 w-full space-y-4 p-6 bg-white shadow-md rounded-lg">
             <h3 className="text-2xl font-semibold text-blue-800">Our Details</h3>
-            <p className="text-lg text-gray-700"><strong>Address:</strong> HI-TECH, Thailapuram, Nazareth, Tamil Nadu 628617</p>
-            <p className="text-lg text-gray-700"><strong>Phone:</strong> +91 7845585135</p>
-            <p className="text-lg text-gray-700"><strong>Email:</strong> hitech@codework.ai</p>
+            <p className="text-lg text-gray-700"><strong>Address:</strong> HI-TECH, Unit 4A, Tong St Business Park, Holme Lane, Bradford, BD4 OPY</p>
+            <p className="text-lg text-gray-700"><strong>Phone:</strong> +44 7479345599</p>
+            <p className="text-lg text-gray-700"><strong>Email:</strong> blueshyshopfronts@outlook.com</p>
             <div className="mt-4">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4851.054695559198!2d-2.060874!3d52.560074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a2ab31d430f9%3A0x151fdf3a3f4e5b90!2sUnion%20Shopfronts%20Ltd!5e0!3m2!1sen!2sin!4v1738955122672!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.8575434445474!2d-1.7286289240259052!3d53.77422334262349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be1206be81277%3A0x7eb2c16c3ff348c4!2sBlue%20Sky%20Aluminium%20Shop%20Fronts%20and%20Shutters!5e0!3m2!1sen!2sin!4v1739708945513!5m2!1sen!2sin"
                 width="100%"
                 height="250"
                 className="rounded-lg shadow-md"
